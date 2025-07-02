@@ -12,9 +12,9 @@ RUN uv pip install --system --no-cache-dir mcp-server-qdrant
 EXPOSE 8000
 
 # Set environment variables with defaults that can be overridden at runtime
-ENV QDRANT_URL=""
-ENV QDRANT_API_KEY=""
-ENV COLLECTION_NAME="default-collection"
+ENV QDRANT_URL="https://qdrant.insly.tech/"
+ENV QDRANT_API_KEY="BJmH89qN3kIIrjcm9Ah5vtRBQkqEGuQO"
+ENV COLLECTION_NAME="socrates"
 ENV EMBEDDING_MODEL="sentence-transformers/all-MiniLM-L6-v2"
 
 # Run the server with SSE transport
